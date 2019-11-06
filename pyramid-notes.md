@@ -2,8 +2,6 @@
 
 You can use env variables, an ini or both for config.
 
-`pserve` takes an ini file as configuration.
-
 To start the app:
 
 `pserve config.ini`
@@ -15,3 +13,6 @@ The other argument, renderer, is optional but not really. If you don't specify a
 
 
 By default, Pyramid allows you to use string and json as renderers. If you've attached a templating engine to your application because you want to have Pyramid generate your HTML as well, you can point directly to your HTML template as your renderer.
+
+
+You can't commit changes directly you have to use flush instead.
