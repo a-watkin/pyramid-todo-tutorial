@@ -1,4 +1,3 @@
-# setup.py
 from setuptools import setup, find_packages
 
 requires = [
@@ -6,7 +5,10 @@ requires = [
     'pyramid-ipython',
     'waitress',
     'sqlalchemy',
-    'psycopg2'
+    'psycopg2',
+    'pyramid_tm',
+    'transaction',
+    'zope.sqlalchemy'
 ]
 
 setup(
@@ -23,6 +25,9 @@ setup(
     entry_points={
         'paste.app_factory': [
             'main = todo:main',
-        ]
+        ],
+        'console_scripts': {
+          'initdb = todo.scripts.initializedb:main' 
+        }
     }
 )
