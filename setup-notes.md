@@ -6,6 +6,11 @@ This allows you to easily install Python packages. Often it's enough to write:
 pip will use setup.py to install your module. Avoid calling setup.py directly.
 
 
+Install dependencies:
+
+`python setup.py develop`
+
+
 
 Above from stackoverflow
 https://stackoverflow.com/questions/1471994/what-is-setup-py##targetText=setup.py%20is%20a%20python,%24%20pip%20install%20.
